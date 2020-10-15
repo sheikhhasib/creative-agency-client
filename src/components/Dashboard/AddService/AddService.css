@@ -1,0 +1,8 @@
+.addService{
+    background-color: #E5E5E5;
+    height: 100vh;
+}
+.form-control:focus {
+    border-color: #009444;
+    box-shadow: inset 0 1px 1px rgba(204, 171, 171, 0.075), 0 0 8px rgba(131, 221, 201, 0.6);
+  }

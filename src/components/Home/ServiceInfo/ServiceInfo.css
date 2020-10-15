@@ -1,0 +1,4 @@
+.service-info:hover{
+    border: 1px solid lightgrey;
+    box-shadow: 5px 5px 10px lightgrey;
+}

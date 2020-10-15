@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.bgBrand{
+    background-color: #009444;
+}
+.textBrand{
+    color: #009444;
+}
+.textDark{
+  color: rgb(2, 0, 0)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.spring {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ededed;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .loader {
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    stroke-linecap: round;
   }
-  to {
-    transform: rotate(360deg);
+  
+  circle {
+    fill: none;
+    stroke-width: 3.5;
+    -webkit-animation-name: preloader;
+            animation-name: preloader;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-transform-origin: 170px 170px;
+            transform-origin: 170px 170px;
+    will-change: transform;
   }
-}
+  circle:nth-of-type(1) {
+    stroke-dasharray: 550px;
+  }
+  circle:nth-of-type(2) {
+    stroke-dasharray: 500px;
+  }
+  circle:nth-of-type(3) {
+    stroke-dasharray: 450px;
+  }
+  circle:nth-of-type(4) {
+    stroke-dasharray: 300px;
+  }
+  circle:nth-of-type(1) {
+    -webkit-animation-delay: -0.15s;
+            animation-delay: -0.15s;
+  }
+  circle:nth-of-type(2) {
+    -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+  }
+  circle:nth-of-type(3) {
+    -webkit-animation-delay: -0.45s;
+            animation-delay: -0.45s;
+  }
+  circle:nth-of-type(4) {
+    -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+  }
+  
+  @-webkit-keyframes preloader {
+    50% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader {
+    50% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
