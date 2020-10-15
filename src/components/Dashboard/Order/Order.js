@@ -28,7 +28,7 @@ const Order = () => {
         })
             .then(response => response.json())
             .then(data => {
-                history.replace('/');
+                history.replace('/orderList');
             })
             .catch(error => {
                 console.error(error)

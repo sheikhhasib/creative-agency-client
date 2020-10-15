@@ -24,7 +24,7 @@ const AddService = () => {
         })
             .then(response => response.json())
             .then(data => {
-                history.replace('/serviceList')
+                history.replace('/')
             })
             .catch(error => {
                 console.error(error)
