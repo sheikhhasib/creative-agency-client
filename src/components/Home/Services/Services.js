@@ -29,7 +29,7 @@ const Services = () => {
                 </div>
                 <Animation modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}></Animation>
                 <div className="d-flex justify-content-center">
-                    <Link to="/order" className="text-decoration-none text-dark">
+                    <Link to="/dashboard" className="text-decoration-none text-dark">
                         <div className="row d-flex justify-content-center my-5">
                             {
                                 services.map(service => <ServiceInfo key={service._id} openModal={openModal} service={service}></ServiceInfo>)
