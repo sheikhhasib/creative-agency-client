@@ -6,13 +6,16 @@ import Dashboard from '../Dashboard/Dashboard';
 const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [services, setServices] = useState([]);
-    const [isStatus, setIsStatus] = useState();
-    console.log(isStatus);
+    const [isStatus, setIsStatus] = useState(null);
+
     useEffect(() => {
         fetch('https://hidden-savannah-07241.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setServices(data))
-    }, [isStatus])
+    }, [isStatus]);
+
+    console.log(isStatus);
+
     const handleStatus = (id, status) => {
         const formData = new FormData()
         formData.append('status', status);
@@ -23,7 +26,9 @@ const ServiceList = () => {
         })
             .then(res => res.json())
             .then(result => {
-                setIsStatus(result);
+                if(result === true){
+                    setIsStatus(Math.floor(Math.random() * 11));
+                }
             })
     }
 
