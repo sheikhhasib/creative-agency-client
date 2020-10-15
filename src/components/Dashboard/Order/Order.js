@@ -22,7 +22,7 @@ const Order = () => {
         formData.append('price', price);
         formData.append('status', status);
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://hidden-savannah-07241.herokuapp.com/addOrder', {
             method: 'POST',
             body: formData
         })

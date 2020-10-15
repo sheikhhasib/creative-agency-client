@@ -19,7 +19,7 @@ const Review = () => {
         formData.append('companyname', companyname);
         formData.append('description', description);
 
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://hidden-savannah-07241.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })

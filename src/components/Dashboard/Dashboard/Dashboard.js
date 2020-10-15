@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
         const formData = new FormData()
         formData.append('email', loggedInUser.email);
-        fetch('http://localhost:5000/allAdmin', {
+        fetch('https://hidden-savannah-07241.herokuapp.com/allAdmin', {
             method: 'POST',
             body: formData
         })

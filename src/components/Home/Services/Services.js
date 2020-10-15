@@ -9,7 +9,7 @@ import ServiceInfo from '../ServiceInfo/ServiceInfo';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('https://hidden-savannah-07241.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

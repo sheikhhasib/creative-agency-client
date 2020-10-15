@@ -1,15 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../../App';
 import Dashboard from '../Dashboard/Dashboard';
-import {useSpring, animated} from 'react-spring'
+
 
 const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [services, setServices] = useState([]);
     const [status, setStatus] = useState(null);
-    const props = useSpring({ x: 100, from: { x: 0 } })
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://hidden-savannah-07241.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [status])
@@ -17,7 +16,7 @@ const ServiceList = () => {
         const formData = new FormData()
         formData.append('status', status);
 
-        fetch(`http://localhost:5000/orderUpdate/${id}`, {
+        fetch(`https://hidden-savannah-07241.herokuapp.com/orderUpdate/${id}`, {
             method: 'PATCH',
             body: formData
         })

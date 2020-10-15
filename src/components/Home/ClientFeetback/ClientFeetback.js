@@ -28,7 +28,7 @@ const clientInfo = [
 const ClientFeetback = () => {
     const [clientFeetback,setClientFeetback] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/allReview')
+        fetch('https://hidden-savannah-07241.herokuapp.com/allReview')
         .then(res => res.json())
         .then(data => setClientFeetback(data))
     },[])
