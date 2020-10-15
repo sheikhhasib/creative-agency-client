@@ -19,14 +19,23 @@
     width: 100%;
     background-color: #ededed;
   }
+.testSpring {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+
+    background-color: #ededed;
+  }
   
   .loader {
     max-width: 15rem;
     width: 100%;
     height: auto;
     stroke-linecap: round;
-  }
-  
+  }  
   circle {
     fill: none;
     stroke-width: 3.5;

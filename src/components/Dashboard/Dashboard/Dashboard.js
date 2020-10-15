@@ -22,7 +22,6 @@ const Dashboard = () => {
             .then(data => setAdmin(data))
     }, [])
 
-    console.log(admin);
     return (
         <div className="col-md-2 p-4" >
             <Link to="/" >

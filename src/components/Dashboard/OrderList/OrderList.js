@@ -15,7 +15,7 @@ const OrderList = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
-    console.log(services);
+
     return (
         <div className="container-fluid">
             <div className="row">
@@ -32,9 +32,9 @@ const OrderList = () => {
                         <div className="col-md-12 addService p-3">
                             <div className="row">
                                 {
-                                    services == 0 && <div class="spring">
+                                    services == 0 && <div className="spring">
 
-                                        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                                        <svg className="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
                                             <circle cx="170" cy="170" r="160" stroke="#E2007C" />
                                             <circle cx="170" cy="170" r="135" stroke="#404041" />
                                             <circle cx="170" cy="170" r="110" stroke="#E2007C" />
