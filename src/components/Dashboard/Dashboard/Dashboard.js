@@ -9,12 +9,12 @@ import { useEffect } from 'react';
 
 const Dashboard = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [admin, setAdmin] = useState(false);
+    const [admin, setAdmin] = useState(null);
 
     useEffect(() => {
         const formData = new FormData()
         formData.append('email', loggedInUser.email);
-        fetch('https://hidden-savannah-07241.herokuapp.com/allAdmin', {
+        fetch('https://hidden-savannah-07241.herokuapp.com/isAdmin', {
             method: 'POST',
             body: formData
         })
