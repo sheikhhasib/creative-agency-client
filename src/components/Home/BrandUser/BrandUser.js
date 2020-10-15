@@ -9,20 +9,20 @@ import airbnb from '../../../images/logos/airbnb.png';
 const BrandUser = () => {
     return (
         <div className="col-md-9 m-auto">
-            <div className="d-flex flex-wrap my-5">
-                <div className="col-md-2 col-sm-4 col-19 mx-3">
+            <div className="row d-flex justify-content-center my-5">
+                <div className="col-md-2 col-sm-4 col-8 mx-3">
                     <img src={slack} style={{width:"100%"}}  alt=""/>
                 </div>
-                <div className="col-md-2 col-sm-4 col-19 mx-3">
+                <div className="col-md-2 col-sm-4 col-8 mx-3">
                     <img src={google}  style={{width:"100%"}} alt=""/>
                 </div>
-                <div className="col-md-2 col-sm-4 col-19 mx-3">
+                <div className="col-md-2 col-sm-4 col-8 mx-3">
                     <img src={uber}  style={{width:"100%"}} alt=""/>
                 </div>
-                <div className="col-md-2 col-sm-4 col-19 mx-3">
+                <div className="col-md-2 col-sm-4 col-8 mx-3">
                     <img src={netflix} style={{width:"100%"}}  alt=""/>
                 </div>
-                <div className="col-md-2 col-sm-4 col-19 mx-3">
+                <div className="col-md-2 col-sm-4 col-8 mx-3">
                     <img src={airbnb} style={{width:"100%"}}  alt=""/>
                 </div>
             </div>
