@@ -16,8 +16,6 @@ const ServiceList = () => {
             .then(data => setServices(data))
     }, [isStatus]);
 
-    console.log(isStatus);
-
     const handleStatus = (id, status) => {
         const formData = new FormData()
         formData.append('status', status);

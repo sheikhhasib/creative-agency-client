@@ -67,7 +67,7 @@ const Login = () => {
                     <h3>Login With</h3>
                     <button  onClick={googleSignIn} style={signInBtnStyle}><img src={googleLogo} className="float-left py-1" alt="" />Continue with Google</button>
                 </div>
-                <p>Don't have account?<Link to="" style={{ color: '#F9A51A' }}>Create an Account</Link></p>
+                <p>Don't have account?<Link to="/login" style={{ color: '#F9A51A' }}>Create an Account</Link></p>
             </div>
         </div>
     );
