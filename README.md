@@ -16,7 +16,3 @@ React ,React Router, Nodejs, Context Api,  Bootstrap ,firebase
 ### `My Resume`
 click here https://drive.google.com/file/d/12pLjVC4ZYzMGlCcxO9IAhPpUBn4fR4kR/view?usp=sharing
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
