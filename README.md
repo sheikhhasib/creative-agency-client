@@ -9,6 +9,8 @@ Admin can see all order state and update state and make admin and added their ta
 ### `live site link`
 Click here : https://creativeagency-2ac4c.web.app/
 
+### `Uses technology` 
+React ,React Router, Nodejs, Context Api,  Bootstrap ,firebase         
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
