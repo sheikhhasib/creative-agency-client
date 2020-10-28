@@ -8,6 +8,7 @@ The main purpose of creating a creative agency was to solve the problem of those
 4. firebase authentication https://firebase.google.com/
 5. I have created admin and genarel users .Genarel login user can view order page and see their order state.
 6. Admin user can update order state and make admin and also add task
+7. the website hosted by firebase hosting https://console.firebase.google.com/u/0/project/doctors-portal-e719c/hosting
     
 ### `live site link`
 Click here : https://creativeagency-2ac4c.web.app/
