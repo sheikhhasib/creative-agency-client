@@ -12,6 +12,6 @@ Click here : https://creativeagency-2ac4c.web.app/
 ### `Uses technology` 
 React ,React Router, Nodejs, Context Api,  Bootstrap ,firebase
 
-### `My Resume`
+### `Visit my Resume`
 click here https://drive.google.com/file/d/12pLjVC4ZYzMGlCcxO9IAhPpUBn4fR4kR/view?usp=sharing
 
