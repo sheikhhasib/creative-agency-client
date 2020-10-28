@@ -10,7 +10,9 @@ Admin can see all order state and update state and make admin and added their ta
 Click here : https://creativeagency-2ac4c.web.app/
 
 ### `Uses technology` 
-React ,React Router, Nodejs, Context Api,  Bootstrap ,firebase         
+React ,React Router, Nodejs, Context Api,  Bootstrap ,firebase  
+###`My Resume`
+click here https://drive.google.com/file/d/12pLjVC4ZYzMGlCcxO9IAhPpUBn4fR4kR/view?usp=sharing
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
